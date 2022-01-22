@@ -4,6 +4,7 @@ import Navbar from "./componentes/estaticos/navbar/Navbar";
 import Home from './paginas/home/Home';
 import Login from "./paginas/login/Login";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 
 function App() {
@@ -12,8 +13,10 @@ function App() {
       <Navbar />
       <div style={{ minHeight: "100vh" }}>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/"  element={<Login />} />
+          <Route path="/login"  element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
         </Routes>
       </div>
       <Footer />
